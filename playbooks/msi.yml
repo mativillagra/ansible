@@ -1,0 +1,4 @@
+
+- hosts: windows
+  tasks:
+   - win_msi: path=C:\\Users\Admin\Downloads\7z938-x64.msi

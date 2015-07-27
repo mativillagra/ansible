@@ -1,0 +1,6 @@
+---
+- hosts: linux
+  sudo : yes
+  tasks:
+
+     - copy: src=/home/matiasvx/ansible_test/files/pepe.txt dest=/home/perinola/pepe.txt owner=perinola group=wheel mode=0600
