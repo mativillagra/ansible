@@ -1,6 +1,0 @@
----
-- hosts: linux
-  sudo : yes
-  tasks:
-
-       - authorized_key: user=perinola key="{{ lookup('file', "../files/debian.pub") }}"

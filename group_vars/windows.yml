@@ -1,4 +1,0 @@
-ansible_ssh_user: Admin
-ansible_ssh_pass: intel123
-ansible_ssh_port: 5985
-ansible_connection: winrm

@@ -1,9 +1,0 @@
----
-- hosts: '{{ target }}'
-  sudo : yes
-  tasks:
-
-   - name: restart marserver
-     service: 
-       name=marserver
-       state=restarted

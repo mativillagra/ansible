@@ -1,6 +1,0 @@
-
-- hosts: windows
-  tasks:
-   win_service:
-      name: spooler
-      state: restarted

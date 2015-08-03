@@ -36,3 +36,15 @@ key.yml
 
 Fuente: http://thornelabs.net/2014/03/08/install-ansible-create-your-inventory-file-and-run-an-ansible-playbook-and-some-ansible-commands.html
 
+####################################################################################################################3
+
+HOST laptop : 
+
+1. ansible-playbook -i hosts  site.yml  --ask-sudo-pass
+
+2. ansible-playbook -i hosts  site.yml  --list-tasks
+
+3. ansible-playbook -i hosts  site.yml  -t simple
+
+
+https://github.com/ansible/ansible-examples/tree/master/lamp_simple
