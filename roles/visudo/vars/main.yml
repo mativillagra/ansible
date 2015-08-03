@@ -1,0 +1,3 @@
+---
+user: debian
+passwordless_sudo_acces: 'ALL=(ALL) NOPASSWD: ALL'

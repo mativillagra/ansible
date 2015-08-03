@@ -1,0 +1,3 @@
+---
+ansible_ssh_user: matiasv
+ansible_connection: local

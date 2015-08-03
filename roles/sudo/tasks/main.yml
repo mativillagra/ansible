@@ -1,0 +1,5 @@
+- name: make sure user is member sudo 
+  user: name={{user}} groups=sudo append=yes
+  tags:
+         - sudo
+

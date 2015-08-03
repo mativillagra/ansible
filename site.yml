@@ -1,0 +1,17 @@
+---
+# This playbook deploys the whole application stack in this site.  
+# - { role: easy, become: yes, become_method: sudo }
+
+- name: apply common configuration to laptop nodes
+  hosts: laptop
+  roles:
+      - { role: nginx, sudo: yes }
+
+
+- name: apply common configuration to servers nodes
+  hosts: servers
+  roles:
+     - { role: ssh-addkey, gather_facts: no }
+     - { role: sudo }
+     - { role: visudo, sudo: yes }
+     - { role: common, sudo: yes, gather_facts: no, tags: [ 'packages', 'upgrade' ] }

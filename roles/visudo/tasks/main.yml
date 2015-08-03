@@ -1,0 +1,5 @@
+- name: edit visudo file 
+  lineinfile: "dest=/etc/sudoers line='{{ user }} {{ passwordless_sudo_acces }}'"
+  tags:
+         - visudo
+
